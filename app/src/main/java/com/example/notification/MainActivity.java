@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        EventHandler.periodRequest();
+       // EventHandler.oneOffRequest();
+
         button = findViewById(R.id.notify);
 
         button.setOnClickListener(new View.OnClickListener() {
